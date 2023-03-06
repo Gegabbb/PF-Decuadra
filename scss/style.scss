@@ -1,176 +1,21 @@
+@import "mixins";
 @import "colores";
 @import "bootstrap";
 
+/*Estilo general*/
+@import "estilogeneral";
 
-
-body {
-    font-family: 'Raleway', sans-serif;
-    background-color: $color-principal;
-
-    nav {
-        background-color: $color-nav;
-        
-        &.nav-link {
-            color: $color-letras-nav;
-
-        }
-    }
-
-    main {
-        background-color: $color-principal;
-
-        h2 {
-            color: $color-titulo;
-    
-        }
-        
-        p {
-            color: $color-texto;
-        
-        }
-    }
-
-    footer {
-        color: white;
-        background-color: $color-footer;
-        overflow: hidden;
-
-        nav {
-            color: white;
-        }
-    }
-
-}
-
-/* INDEX */
-.h2-margin-modifier {
-    margin-bottom: 20px;
-}
-.container{
-    margin-top: 50px;
-}
-
-.col-xs-12{
-    margin-bottom: 30px;
-}
-
-.card-img-padding-modifier {
-    padding: 10px 0 ;
-
-}
-.box_shadow {
-    box-shadow: 5px 10px rgba(153, 153, 153, 0.5);
-    
-}
-
-
-
-/*Servicios*/
-.text_modifier {
-    text-align: justify;
-
-}
-.titulo_servicios {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-
-}
-/*Empresa*/
-@mixin hr-modifier {
-    height: 50px;
-    background-color: #A569BD ;
-    transform: skewX(20deg);
-    margin: 100px 0;
-}
-hr {
-    @include hr-modifier();
- 
-}
-
-
-.texto_empresa_box {
-    display: flex;
-    height: 400px;
-    align-items: center;
-    margin: 30px 0;
-
-}
-.texto_empresa  {
-    margin: 30px 0;
-
-}
-
-.empresa_lista {
-    list-style: none;
-    margin: 15px 0;
-    
-}
-.caja_galeria {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    margin: 20px 0;
-    
-}
-
-.img_galeria {
-    transition: .5s;
-
-}
-.img_galeria:hover {
-    border-radius: 50px;
-    cursor: crosshair;
-
-}
-
-.galery_img_box img {
-    max-width: 100%;
-
-}
-.galery_img_box:nth-of-type(1){
-    grid-column: span 6;
-}
-.galery_img_box:nth-of-type(2){
-    grid-column: span 6;
-}
-.galery_img_box:nth-of-type(3){
-    grid-column: span 6;
-}
-.galery_img_box:nth-of-type(4){
-    grid-column: span 6;
-}
-.galery_img_box:nth-of-type(5){
-    grid-column: span 6;
-}
-.galery_img_box:nth-of-type(6){
-    grid-column: span 6;
-}
+/*Paginas*/
+@import "index";
+@import "servicios";
+@import "empresa";
+@import "galeria";
+/*La pagina contacto solo posee el estilo de boostrap*/
 
 /*Media Queries*/
-@media screen and (max-width: 756px) {
-    .galery_img_box:nth-of-type(1){
-        grid-column: span 12;
-    }
-    .galery_img_box:nth-of-type(2){
-        grid-column: span 12;
-    }
-    .galery_img_box:nth-of-type(3){
-        grid-column: span 12;
-    }
-    .galery_img_box:nth-of-type(4){
-        grid-column: span 12;
-    }
-    .galery_img_box:nth-of-type(5){
-        grid-column: span 12;
-    }
-    .galery_img_box:nth-of-type(6){
-        grid-column: span 12;
-    }
-}
-@media screen and (max-width: 768px) {     
-    .article_box_shadow{
-        box-shadow: 5px 10px rgba(153, 153, 153, 0.5);
-    }
+@import "mediaqueries";
 
-}
+
+
+
+

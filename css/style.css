@@ -1,3 +1,9 @@
+hr {
+  height: 50px;
+  background-color: #A569BD;
+  transform: skewX(20deg);
+  margin: 100px 0; }
+
 .card {
   background-color: #D7BDE2; }
   .card.card-body {
@@ -8623,6 +8629,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+/*Estilo general*/
+/*Estilo general de la pagina*/
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f2f2f2; }
@@ -8643,6 +8651,7 @@ body {
     body footer nav {
       color: white; }
 
+/*Paginas*/
 /* INDEX */
 .h2-margin-modifier {
   margin-bottom: 20px; }
@@ -8668,12 +8677,6 @@ body {
   font-size: 40px; }
 
 /*Empresa*/
-hr {
-  height: 50px;
-  background-color: #A569BD;
-  transform: skewX(20deg);
-  margin: 100px 0; }
-
 .texto_empresa_box {
   display: flex;
   height: 400px;
@@ -8722,6 +8725,8 @@ hr {
 .galery_img_box:nth-of-type(6) {
   grid-column: span 6; }
 
+/*La pagina contacto solo posee el estilo de boostrap*/
+/*Media Queries*/
 /*Media Queries*/
 @media screen and (max-width: 756px) {
   .galery_img_box:nth-of-type(1) {

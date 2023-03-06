@@ -1,0 +1,40 @@
+/*Estilo general de la pagina*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: $color-principal;
+
+    nav {
+        background-color: $color-nav;
+        
+        &.nav-link {
+            color: $color-letras-nav;
+
+        }
+    }
+
+    main {
+        background-color: $color-principal;
+
+        h2 {
+            color: $color-titulo;
+    
+        }
+        
+        p {
+            color: $color-texto;
+        
+        }
+    }
+
+    footer {
+        color: white;
+        background-color: $color-footer;
+        overflow: hidden;
+
+        nav {
+            color: white;
+        }
+    }
+
+}

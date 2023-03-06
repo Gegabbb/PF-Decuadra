@@ -8623,6 +8623,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+/*Mixins*/
 hr {
   height: 50px;
   background-color: #A569BD;
@@ -8690,6 +8691,7 @@ body {
   list-style: none;
   margin: 15px 0; }
 
+/*Galeria*/
 .caja_galeria {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

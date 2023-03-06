@@ -1,9 +1,12 @@
+/*Mixins*/
+
 @mixin hr-modifier {
     height: 50px;
     background-color: #A569BD ;
     transform: skewX(20deg);
     margin: 100px 0;
 }
+
 hr {
     @include hr-modifier();
  
